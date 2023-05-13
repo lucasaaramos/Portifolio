@@ -30,7 +30,7 @@ const images = [
 let indice = 0;
 setInterval(() => {
     indice = (indice + 1) % images.length;
-    document.getElementById("imagem-profile").src = images[indice];
+    document.getElementById("imagem-container").src = images[indice];
 }, 3000);
 
 
@@ -106,7 +106,6 @@ function changeColor() {
     }
 
 }
-
 
 
 
