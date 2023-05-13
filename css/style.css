@@ -46,14 +46,14 @@ p {
 /* Header - Menu Section - nav bar */
 
 #logo {
-    width: 65px;
-    height: 55px;
+    max-width: 65px;
+    max-height: 55px;
 }
 
 #header-nav {
     background-color: white;
     width: 100%;
-    height: 65px;
+    max-height: 65px;
     font-family: var(--font-title);
     position: fixed;
     z-index: 1;
@@ -70,6 +70,8 @@ p {
     margin: 0;
     padding: 0;
     display: flex;
+    font-size: 1.3vw;
+    
 }
 
 .menu li {
@@ -81,6 +83,7 @@ p {
     color: var(--colorA);
     text-align: center;
     text-decoration: none;
+    justify-content: center;
     padding: 15px;
 }
 
@@ -164,31 +167,37 @@ p {
 /*This is the container that contains the imagems that will display and the "about me" section*/
 #aboutme {
     width: 90%;
-    padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: auto;
 }
 
 
 #myexperience {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+
     justify-content: center;
 }
 
 .profile-container {
-
-    max-width: 50%;
+    width: 50%;
     min-width: 400px;
-    max-height: 500px;
-    
+    max-height: 400px;
+    margin-top: 80px;
     box-sizing: border-box;
-    margin-top: 40px;
+
+}
+
+.experience-container {
+    width: 50%;
+    min-width: 400px;
+    max-height: 400px;
     padding: 5%;
+    margin-top: 80px;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 
@@ -205,10 +214,15 @@ p {
     width: 100%;
 }
 
+#imagem-container {
+    width: 100%;
+}
+
 #profile {
     max-width: 400px;
     max-height: 400px;
     justify-content: center;
+
 }
 
 
@@ -223,7 +237,7 @@ p {
 }
 
 #myprojects {
-    
+    margin-top: 150px;
 }
 
 
